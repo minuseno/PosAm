@@ -1,0 +1,20 @@
+{
+  "name": "posam1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "report": "npx playwright show-report",
+    "run:fe:tests:dev": "npx playwright test --project=frontendTests --workers=1 --ui",
+    "run:api:tests:dev": "npx playwright test --project=apiTests --workers=1 --ui",
+    "run:fe:tests:prod": "npx playwright test --project=frontendTests --workers=1",
+    "run:api:tests:prod": "npx playwright test --project=apiTests --workers=1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.7"
+  }
+}
